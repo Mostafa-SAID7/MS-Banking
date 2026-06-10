@@ -111,7 +111,9 @@
   --input: oklch(0.15 0.025 260 / 0.18);
   --ring: oklch(0.65 0.18 78 / 0.5);
 
+  --gradient-gold: linear-gradient(135deg, oklch(0.72 0.18 82), oklch(0.58 0.20 72));
   --gradient-surface: linear-gradient(180deg, oklch(1 0 0 / 0.8), oklch(0.97 0.005 90 / 0.4));
+  --shadow-gold: 0 10px 40px -10px oklch(0.65 0.18 78 / 0.35);
   --shadow-elegant: 0 20px 60px -20px oklch(0.15 0.025 260 / 0.18);
 }
 
@@ -147,8 +149,8 @@
 
 @utility grain-bg {
   background-image:
-    radial-gradient(ellipse 80% 50% at 50% -10%, oklch(0.83 0.14 88 / 0.10), transparent 60%),
-    radial-gradient(ellipse 60% 50% at 80% 50%, oklch(0.83 0.14 88 / 0.06), transparent 60%);
+    radial-gradient(ellipse 80% 50% at 50% -10%, var(--gold) / 0.10, transparent 60%),
+    radial-gradient(ellipse 60% 50% at 80% 50%, var(--gold) / 0.06, transparent 60%);
 }
 
 @utility hover-lift {
@@ -161,7 +163,7 @@
   100% { background-position: 200% 0; }
 }
 @utility shimmer {
-  background: linear-gradient(90deg, transparent, oklch(0.83 0.14 88 / 0.15), transparent);
+  background: linear-gradient(90deg, transparent, var(--gold) / 0.15, transparent);
   background-size: 200% 100%;
   animation: shimmer 3s linear infinite;
 }
