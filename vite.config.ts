@@ -8,4 +8,15 @@ export default defineConfig({
   server: {
     middlewareMode: true,
   },
+  build: {
+    outDir: "dist/client",
+    rollupOptions: {
+      external: ["node:async_hooks", "node:fs", "node:path"],
+      output: {
+        globals: {
+          "node:async_hooks": "{}",
+        },
+      },
+    },
+  },
 });
