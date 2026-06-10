@@ -58,7 +58,7 @@ export function Hero() {
           </a>
           <a
             href="#contact"
-            className="inline-flex items-center gap-2 rounded-full border border-border glass px-6 py-3.5 text-sm font-semibold hover:text-gold transition-colors"
+            className="inline-flex items-center gap-2 rounded-full border border-gold/60 glass px-6 py-3.5 text-sm font-semibold text-foreground hover:border-gold hover:bg-surface/80 transition-all"
           >
             <Calendar className="h-4 w-4" />
             Schedule a Call

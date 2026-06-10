@@ -31,10 +31,10 @@ export function Projects() {
               <button
                 key={c}
                 onClick={() => setFilter(c)}
-                className={`relative rounded-full border px-4 py-2 text-sm transition-all ${
+                className={`relative rounded-full border px-4 py-2 text-sm font-medium transition-all ${
                   active
-                    ? "border-gold/50 text-primary-foreground"
-                    : "border-border bg-surface/60 text-muted-foreground hover:text-foreground"
+                    ? "border-gold text-foreground"
+                    : "border-border bg-surface/80 text-foreground hover:bg-surface hover:border-gold/50"
                 }`}
               >
                 {active && (
