@@ -1,9 +1,8 @@
 export type ProjectCategory =
-  | "Digital Banking"
-  | "Payment Systems"
-  | "Loan Management"
-  | "Core Banking"
-  | "Wallets";
+  | "Microservices"
+  | "Real-time Systems"
+  | "Multi-Tenant Platforms"
+  | "Frontend Performance";
 
 export interface Project {
   id: string;
@@ -18,81 +17,66 @@ export interface Project {
 export const projects: Project[] = [
   {
     id: "1",
-    title: "NorthBank — Digital Banking Platform",
+    title: "E-Commerce Marketplace Engine",
     description:
-      "End-to-end retail banking suite with mobile + web clients, instant onboarding, card controls, and real-time spending insights for 320k+ active users.",
-    category: "Digital Banking",
-    tech: ["React Native", "Next.js", "NestJS", "PostgreSQL", "Kafka", "AWS"],
+      "Modular marketplace backend built on .NET 8 microservices with Repository Pattern and Unit of Work — a maintainable, scalable foundation suitable for financial marketplaces.",
+    category: "Microservices",
+    tech: [".NET 8", "Microservices", "Clean Architecture", "EF Core", "SQL Server", "Docker"],
     metrics: [
-      { label: "Active users", value: "320K+" },
-      { label: "Uptime", value: "99.99%" },
-      { label: "Onboarding", value: "< 4 min" },
+      { label: "Services", value: "12+" },
+      { label: "Architecture", value: "Clean / DDD" },
+      { label: "Coverage", value: "Repo + UoW" },
     ],
-    accent: "linear-gradient(135deg, #1f2a44, #0b1220)",
+    accent: "linear-gradient(135deg, #1E293B, #0F172A)",
   },
   {
     id: "2",
-    title: "FluxPay — Real-time Payment Gateway",
+    title: "Real-Time Logistics & IoT Dashboard",
     description:
-      "PCI-DSS compliant payment orchestration layer with smart routing, reconciliation engine and 3DS2 authentication across 40+ acquirers.",
-    category: "Payment Systems",
-    tech: ["Node.js", "Go", "Kafka", "Redis", "PostgreSQL", "Kubernetes"],
+      "Full-stack Angular + .NET dashboard streaming high-frequency telemetry over SignalR — the same architecture used for real-time payment monitoring and banking operations.",
+    category: "Real-time Systems",
+    tech: ["Angular", ".NET 8", "SignalR", "Redis", "PostgreSQL"],
     metrics: [
-      { label: "Processed", value: "$45M+/mo" },
-      { label: "Auth rate", value: "+12.4%" },
-      { label: "Latency", value: "84ms p95" },
+      { label: "Live endpoints", value: "1,000+" },
+      { label: "Transport", value: "SignalR" },
+      { label: "Latency", value: "Sub-second" },
     ],
-    accent: "linear-gradient(135deg, #2a1f44, #120b22)",
+    accent: "linear-gradient(135deg, #16304d, #0b1a2c)",
   },
   {
     id: "3",
-    title: "LendCore — Loan Origination System",
+    title: "Multi-Tenant CRM/ERP Sync Platform",
     description:
-      "Smart loan origination + servicing platform with AI risk scoring, automated KYC, e-signature and dynamic underwriting rules.",
-    category: "Loan Management",
-    tech: ["NestJS", "Python", "PostgreSQL", "Redis", "AWS Lambda"],
+      "Synchronization layer for large-scale data transfer with strong consistency guarantees and secure tenant data isolation — the core pattern behind multi-tenant banking platforms.",
+    category: "Multi-Tenant Platforms",
+    tech: [".NET Core", "Multi-Tenancy", "RBAC", "SQL Server", "Azure DevOps"],
     metrics: [
-      { label: "Approval time", value: "−68%" },
-      { label: "Default rate", value: "−31%" },
-      { label: "Loans / month", value: "12K+" },
+      { label: "Isolation", value: "Per-tenant" },
+      { label: "Access model", value: "Hierarchical RBAC" },
+      { label: "DB performance", value: "+300%" },
     ],
-    accent: "linear-gradient(135deg, #44331f, #221608)",
+    accent: "linear-gradient(135deg, #12324a, #08202f)",
   },
   {
     id: "4",
-    title: "Treasura — Corporate Treasury Dashboard",
+    title: "Next.js Portfolio & PWA",
     description:
-      "Multi-entity treasury & cash management cockpit with multi-currency accounts, FX hedging, intraday liquidity and SWIFT MT/MX integration.",
-    category: "Core Banking",
-    tech: ["React", "TypeScript", "Spring Boot", "Oracle", "Kafka"],
+      "High-performance personal platform with optimized Core Web Vitals, offline-ready PWA behaviour and a strict design-token system.",
+    category: "Frontend Performance",
+    tech: ["Next.js", "React", "TypeScript", "Tailwind CSS", "PWA"],
     metrics: [
-      { label: "Cash visibility", value: "Real-time" },
-      { label: "Entities", value: "180+" },
-      { label: "FX volume", value: "$1.2B" },
+      { label: "Lighthouse", value: "98+" },
+      { label: "Rendering", value: "SSR / ISR" },
+      { label: "Bundle", value: "Optimized" },
     ],
-    accent: "linear-gradient(135deg, #1f4439, #08221a)",
-  },
-  {
-    id: "5",
-    title: "Vaulto — Secure Digital Wallet",
-    description:
-      "Biometric-secured digital wallet with tokenized card storage, P2P transfers, KYC/AML pipeline and on-device fraud detection.",
-    category: "Wallets",
-    tech: ["React Native", "Node.js", "MongoDB", "Redis", "Azure"],
-    metrics: [
-      { label: "Fraud blocked", value: "−78%" },
-      { label: "KYC pass rate", value: "94%" },
-      { label: "Transfers", value: "8M+" },
-    ],
-    accent: "linear-gradient(135deg, #44291f, #220f08)",
+    accent: "linear-gradient(135deg, #1b3a52, #0a1c2b)",
   },
 ];
 
 export const categories = [
   "All",
-  "Digital Banking",
-  "Payment Systems",
-  "Loan Management",
-  "Core Banking",
-  "Wallets",
+  "Microservices",
+  "Real-time Systems",
+  "Multi-Tenant Platforms",
+  "Frontend Performance",
 ] as const;

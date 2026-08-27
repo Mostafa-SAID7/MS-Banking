@@ -4,19 +4,24 @@ export function SectionHeading({
   eyebrow,
   title,
   description,
+  align = "left",
 }: {
   eyebrow: string;
   title: React.ReactNode;
   description?: string;
+  align?: "left" | "center";
 }) {
   return (
-    <Reveal className="mx-auto max-w-3xl text-center mb-14">
-      <span className="inline-flex items-center gap-2 rounded-full border border-border glass px-3 py-1 text-[11px] uppercase tracking-[0.18em] text-muted-foreground">
-        <span className="h-1 w-1 rounded-full bg-gold" /> {eyebrow}
+    <Reveal
+      className={`mb-14 max-w-2xl ${align === "center" ? "mx-auto text-center" : ""}`}
+    >
+      <span className="mono-label inline-flex items-center gap-2">
+        <span className="h-1 w-1 rounded-full bg-brand-soft" />
+        {eyebrow}
       </span>
-      <h2 className="mt-5 text-4xl md:text-5xl font-bold tracking-tight">{title}</h2>
+      <h2 className="mt-5 text-3xl md:text-[2.75rem] md:leading-[1.1] font-semibold">{title}</h2>
       {description && (
-        <p className="mt-4 text-muted-foreground text-base md:text-lg">{description}</p>
+        <p className="mt-4 text-muted-foreground leading-relaxed md:text-lg">{description}</p>
       )}
     </Reveal>
   );

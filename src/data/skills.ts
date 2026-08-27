@@ -1,32 +1,53 @@
-import { Code2, Server, Banknote, Database, Shield } from "lucide-react";
+import { Server, Code2, Database, Shield, Activity } from "lucide-react";
 
 export const skillGroups = [
   {
-    title: "Frontend",
-    icon: Code2,
-    items: ["React", "TypeScript", "Next.js", "Tailwind CSS", "Framer Motion", "Redux Toolkit"],
-  },
-  {
     title: "Backend",
     icon: Server,
-    items: ["Node.js", "NestJS", "Express", "Java / Spring Boot", "GraphQL", "REST APIs"],
-  },
-  {
-    title: "FinTech Specialization",
-    icon: Banknote,
     items: [
-      "Stripe", "Razorpay", "Plaid", "Core Banking APIs",
-      "Digital Wallets", "Loan Management", "KYC / AML", "Open Banking",
+      ".NET 8 / Core",
+      "C#",
+      "ASP.NET Web API",
+      "Microservices",
+      "Clean Architecture",
+      "DDD",
+      "gRPC",
+      "Entity Framework",
     ],
   },
   {
-    title: "Databases & Cache",
-    icon: Database,
-    items: ["PostgreSQL", "MongoDB", "Redis", "Kafka", "Elasticsearch"],
+    title: "Frontend",
+    icon: Code2,
+    items: ["Angular", "React.js", "Next.js", "TypeScript", "Tailwind CSS", "Redux"],
   },
   {
-    title: "Security & Cloud",
+    title: "Real-time & Performance",
+    icon: Activity,
+    items: [
+      "SignalR",
+      "High-throughput APIs",
+      "Query tuning (+300%)",
+      "Caching strategy",
+      "Load optimization",
+    ],
+  },
+  {
+    title: "Data & Caching",
+    icon: Database,
+    items: ["SQL Server (advanced tuning)", "PostgreSQL", "Redis", "MongoDB"],
+  },
+  {
+    title: "DevOps & Security",
     icon: Shield,
-    items: ["OAuth2", "JWT", "End-to-End Encryption", "AWS", "Azure", "Docker", "Kubernetes", "Microservices"],
+    items: [
+      "Azure DevOps",
+      "Docker",
+      "Kubernetes",
+      "CI/CD",
+      "OAuth 2.0",
+      "JWT",
+      "RBAC",
+      "Multi-tenant isolation",
+    ],
   },
 ];

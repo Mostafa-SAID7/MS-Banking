@@ -7,23 +7,25 @@ import { About } from "@/components/About";
 import { Skills } from "@/components/Skills";
 import { Projects } from "@/components/Projects";
 import { Experience } from "@/components/Experience";
-import { Contact } from "@/components/Contact";
 import { Footer } from "@/components/Footer";
 
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Aaron — Full-Stack Developer | Banking & FinTech Specialist" },
+      { title: "Mostafa Samir — Senior Full Stack Engineer | Banking & Fintech" },
       {
         name: "description",
         content:
-          "Senior full-stack developer building secure, scalable digital banking, payment, and FinTech platforms for banks and fintech challengers.",
+          "Senior Full Stack Engineer with 4+ years building .NET 8 microservices, multi-tenant architectures and real-time platforms for banking and fintech systems.",
       },
-      { property: "og:title", content: "Aaron — Banking & FinTech Full-Stack Developer" },
+      { property: "og:title", content: "Mostafa Samir — Banking & Fintech Full Stack Engineer" },
       {
         property: "og:description",
-        content: "Secure, compliant, high-throughput banking and payment systems — from core ledgers to mobile wallets.",
+        content:
+          "Scalable microservices, secure multi-tenant platforms and real-time SignalR backends built on .NET 8 for financial-grade reliability.",
       },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
@@ -39,7 +41,7 @@ export const Route = createFileRoute("/")({
 
 function Index() {
   return (
-    <div className="min-h-screen bg-background text-foreground overflow-x-hidden">
+    <div className="min-h-screen bg-background text-foreground overflow-x-clip">
       <SmoothScroll />
       <Toaster
         theme="dark"
@@ -59,7 +61,6 @@ function Index() {
         <Skills />
         <Projects />
         <Experience />
-        <Contact />
       </main>
       <Footer />
     </div>

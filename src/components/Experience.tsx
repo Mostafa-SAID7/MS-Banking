@@ -4,32 +4,18 @@ import { Building2 } from "lucide-react";
 
 const roles = [
   {
-    company: "Nordwell Bank",
-    role: "Principal Engineer — Digital Banking",
-    period: "2023 — Present",
-    desc: "Leading the rebuild of the core banking platform serving 2M+ retail customers. Owning ledger, payments and mobile banking architecture.",
-    tags: ["Core Banking", "Spring Boot", "Kafka", "AWS"],
+    company: "WE3DS Company — Tanta, Egypt",
+    role: "Senior Software Developer",
+    period: "Jul 2024 — Present",
+    desc: "Architected scalable .NET 8 microservices with Clean Architecture and DDD, led the transition to multi-tenant architectures with secure data isolation and hierarchical RBAC, and engineered high-throughput real-time backends with SignalR serving 1,000+ endpoints.",
+    tags: [".NET 8", "Microservices", "SignalR", "Multi-tenant RBAC", "Azure DevOps"],
   },
   {
-    company: "FluxPay",
-    role: "Staff Full-Stack Engineer",
-    period: "2021 — 2023",
-    desc: "Built the payment orchestration layer and reconciliation engine processing $45M+ monthly across 40+ acquirers and PSPs.",
-    tags: ["Node.js", "Go", "PostgreSQL", "PCI-DSS"],
-  },
-  {
-    company: "LendCore",
-    role: "Senior Backend Engineer",
-    period: "2019 — 2021",
-    desc: "Designed the loan origination & servicing platform with automated KYC, risk scoring and dynamic underwriting rules.",
-    tags: ["NestJS", "Python", "Risk Scoring", "KYC/AML"],
-  },
-  {
-    company: "Vaulto",
-    role: "Full-Stack Developer",
-    period: "2017 — 2019",
-    desc: "Shipped a secure digital wallet with biometric auth, P2P transfers and tokenized card storage adopted by 800k+ users.",
-    tags: ["React Native", "MongoDB", "OAuth2", "Biometrics"],
+    company: "Freelance — Cairo, Egypt",
+    role: "Full Stack Developer",
+    period: "Nov 2023 — Jul 2024",
+    desc: "Delivered end-to-end applications with Next.js / React on top of .NET Core APIs, integrated third-party REST services for payments, auth and mapping, and containerized services with Docker.",
+    tags: ["Next.js", "React", ".NET Core", "REST integrations", "Docker"],
   },
 ];
 
